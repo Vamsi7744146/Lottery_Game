@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>LotteryFinalProject</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #lottery-image {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 140px;
+            height: 40px;
+            background: linear-gradient(45deg, rgb(57, 228, 57), black);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 5px
+        }
+
+        .Lottery-Sheet-Container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .winningbox {
+            background: linear-gradient(45deg, red, black);
+            color: white;
+        }
+
+        .highlightedBox {
+            border: 5px solid rgb(160, 14, 138);
+        }
+
+        #PickNumberBtn {
+            background: linear-gradient(45deg, violet, black);
+            border: none;
+            padding: 10px 30px;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #PickNumberBtn:hover {
+            background: linear-gradient(45deg, black, blue);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lottery game</h1>
+    <div id="lottery-image">
+        <div class="Lottery-Sheet-Container" id="LotterySheetContainer">
+            <!-- <div class="box">1.100 cash</div>
+            <div class="box">2.Toy Car</div>-->
+        </div>
+        <h2 id="result">Result</h2>
+        <button id="PickNumberBtn">Pick a Number</button>
+
+    </div>
+
+
+
+    <script src="script.js">
+
+     
+    </script>
+
+</body>
+
+</html>
